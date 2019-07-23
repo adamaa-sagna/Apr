@@ -1,0 +1,570 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@media screen and (min-width:1025px){
+/* -------------------HEADER ---------------------- */
+    .imgHeader{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(38, 158, 92, 0.493);
+    /* background-image: url(./logo.jpg); */
+    /* background-size: cover; */
+}
+.nav a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color : white;
+    background-color: rgba(113, 104, 147, 0.308);
+    height: 50px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.fixed-nav .nav {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+}
+.nav a:hover{
+    background-color: rgba(158, 150, 185, 0.5);
+    color: black;
+}
+.nav ul{
+    list-style: none;
+    display: flex;
+}
+.nav ul li{
+    position: relative;
+    width: 100%;
+    top: -19px;
+    text-align: center;
+}
+.nav li:hover .sousMenu > li{
+    display: block;
+    background: rgba(50, 46, 66, 0.404);
+    top: 0;
+}
+.sousMenu li{
+    display: none;
+    position: relative;
+} 
+.sousMenu{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+#burger{
+    display: none;
+}
+
+/* ------------------- NOS ACTIONS ------------------------------------ */
+
+.anime, .insertions,.education{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.titre{
+    text-align: center;
+    width: 500px;
+    margin: 0 auto;
+}
+.para{
+    text-align: center;
+    width: 500px;
+    height: 250px
+}
+/* ---------------------------------FOOTER --------------------------- */
+footer {
+    background-color: rgb(79, 190, 138);
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.Asso{
+    margin-top: 10px;
+}
+.logo{
+    width: 100%;
+    display: flex;
+    justify-content: space-around; 
+}
+.suivez{
+    display: flex;
+    width: 10%;
+    justify-content: space-around
+}
+.fin{
+    background-color: black;
+    border-color: black;
+    width: 70%;
+    margin-top: 50px;
+}
+.copyr{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+}
+@media screen and (min-width:769px) and (max-width:1024px){
+    .imgHeader{
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(38, 158, 92, 0.493);
+        position: relative;
+    }
+    nav{
+        position: absolute;
+        top: 10px;
+        width: 100%;
+    }
+    .nav a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color : white;
+        background-color: rgba(113, 104, 147, 0.308);
+        height: 50px;
+        width: 100%;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    .nav a:hover{
+        background-color: rgba(158, 150, 185, 0.5);
+        color: black;
+    }
+    .nav ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .nav ul li{
+        position: relative;
+        width: 100%;
+        text-align: center;
+        
+    }
+    .nav li:hover .sousMenu > li{
+        display: block;
+        background: rgba(50, 46, 66, 0.404);
+        top: 0;
+    }
+    .sousMenu li{
+        display: none;
+        position: relative;
+    } 
+    label{
+        width: 35px;
+        height: 35px;
+        top: 10px;
+        left: 10px;
+        line-height: 10px;
+        z-index: 5;
+    }
+    .trait1, .trait2, .trait3{
+        /* position: absolute; */
+        width: 35px;
+        height: 5px;
+        top: 50%;
+        margin-top: 5px;
+        background-color:black;
+        transition: .5s;
+    }
+    #burger{
+        position: fixed;
+        position: absolute;
+        cursor: pointer;
+        width: 50px;
+        height: 30px;
+        top: 2%;
+        left: -5px;
+        opacity: 0;
+    }
+    .surprise{
+        display: none;
+    }
+    .burger:checked ~ .surprise {
+       display: block;
+    }
+    .burger:checked ~ .trait .trait2{
+        opacity: 0;
+        top: 50%;
+    }
+    .burger:checked ~ .trait .trait1{
+        opacity: 1;
+        background-color: red;
+        transform: translateY(20px) rotate(-130deg) ;
+    }
+    .burger:checked ~ .trait .trait3{
+        opacity: 1;
+        background-color: red;
+        transform: translateY(0px) rotate(130deg);
+    }
+    /* ------------------- NOS ACTIONS ------------------------------------ */
+
+    .anime, .insertions,.education{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    }
+    .titre{
+    text-align: center;
+    width: 500px;
+    margin: 0 auto;
+    }
+    .para{
+    text-align: center;
+    width: 500px;
+    height: 250px
+    }
+
+    /* ---------------------------------FOOTER --------------------------- */
+footer {
+    background-color: rgb(79, 190, 138);
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.Asso{
+    margin-top: 10px;
+}
+.logo{
+    width: 100%;
+    display: flex;
+    justify-content: space-around; 
+}
+.suivez{
+    display: flex;
+    width: 20%;
+    justify-content: space-around
+}
+.fin{
+    background-color: black;
+    border-color: black;
+    width: 70%;
+    margin-top: 35px;
+}
+.copyr{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    /* margin-bottom: 10px; */
+}
+}
+@media screen and (min-width:481px) and (max-width:768px){
+    .imgHeader{
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(38, 158, 92, 0.493);
+        position: relative;
+    }
+    nav{
+        position: absolute;
+        top: 10px;
+        width: 100%;
+    }
+    .nav a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color : white;
+        background-color: rgba(113, 104, 147, 0.308);
+        height: 50px;
+        width: 100%;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    .nav a:hover{
+        background-color: rgba(158, 150, 185, 0.5);
+        color: black;
+    }
+    .nav ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .nav ul li{
+        position: relative;
+        width: 100%;
+        text-align: center;
+        
+    }
+    .nav li:hover .sousMenu > li{
+        display: block;
+        background: rgba(50, 46, 66, 0.404);
+        top: 0;
+    }
+    .sousMenu li{
+        display: none;
+        position: relative;
+    } 
+    label{
+        width: 35px;
+        height: 35px;
+        top: 10px;
+        left: 10px;
+        line-height: 10px;
+        z-index: 5;
+    }
+    .trait1, .trait2, .trait3{
+        /* position: absolute; */
+        width: 35px;
+        height: 5px;
+        top: 50%;
+        margin-top: 5px;
+        background-color:black;
+        transition: .5s;
+    }
+    #burger{
+        position: fixed;
+        position: absolute;
+        cursor: pointer;
+        width: 50px;
+        height: 30px;
+        top: 2%;
+        left: -5px;
+        opacity: 0;
+    }
+    .surprise{
+        display: none;
+    }
+    .burger:checked ~ .surprise {
+       display: block;
+    }
+    .burger:checked ~ .trait .trait2{
+        opacity: 0;
+        top: 50%;
+    }
+    .burger:checked ~ .trait .trait1{
+        opacity: 1;
+        background-color: red;
+        transform: translateY(20px) rotate(-130deg) ;
+    }
+    .burger:checked ~ .trait .trait3{
+        opacity: 1;
+        background-color: red;
+        transform: translateY(0px) rotate(130deg);
+    }
+        /* ------------------- NOS ACTIONS ------------------------------------ */
+
+    .anime, .insertions,.education{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+    }
+    .titre{
+            text-align: center;
+            width: 500px;
+            margin: 0 auto;
+    }
+    .para{
+            text-align: center;
+            width: 500px;
+            height: 250px
+    }
+/* ---------------------------------FOOTER --------------------------- */
+footer {
+    background-color: rgb(218, 113, 28);
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.Asso{
+    margin-top: 10px;
+}
+.logo{
+    width: 100%;
+    display: flex;
+    justify-content: space-around; 
+}
+.suivez{
+    display: flex;
+    width: 30%;
+    justify-content: space-around
+}
+.fin{
+    background-color: black;
+    border-color: black;
+    width: 70%;
+    margin-top: 35px;
+}
+.copyr{
+    font-size: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    /* margin-bottom: 10px; */
+}
+}
+@media screen and (min-width:320px) and (max-width:480px){
+    .imgHeader{
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(38, 158, 92, 0.493);
+        position: relative;
+    }
+    nav{
+        position: absolute;
+        top: 10px;
+        width: 100%;
+    }
+    .nav a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color : white;
+        background-color: rgba(113, 104, 147, 0.308);
+        height: 50px;
+        width: 100%;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    .nav a:hover{
+        background-color: rgba(158, 150, 185, 0.5);
+        color: black;
+    }
+    .nav ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .nav ul li{
+        position: relative;
+        width: 100%;
+        text-align: center;
+        
+    }
+    .nav li:hover .sousMenu > li{
+        display: block;
+        background: rgba(50, 46, 66, 0.404);
+        top: 0;
+    }
+    .sousMenu li{
+        display: none;
+        position: relative;
+    } 
+    label{
+        width: 35px;
+        height: 35px;
+        top: 10px;
+        left: 10px;
+        line-height: 10px;
+        z-index: 5;
+    }
+    .trait1, .trait2, .trait3{
+        /* position: absolute; */
+        width: 35px;
+        height: 5px;
+        top: 50%;
+        margin-top: 5px;
+        background-color:black;
+        transition: .5s;
+    }
+    #burger{
+        position: fixed;
+        position: absolute;
+        cursor: pointer;
+        width: 50px;
+        height: 30px;
+        top: 2%;
+        left: -5px;
+        opacity: 0;
+    }
+    .surprise{
+        display: none;
+    }
+    .burger:checked ~ .surprise {
+       display: block;
+    }
+    .burger:checked ~ .trait .trait2{
+        opacity: 0;
+        top: 50%;
+    }
+    .burger:checked ~ .trait .trait1{
+        opacity: 1;
+        background-color: red;
+        transform: translateY(20px) rotate(-130deg) ;
+    }
+    .burger:checked ~ .trait .trait3{
+        opacity: 1;
+        background-color: red;
+        transform: translateY(0px) rotate(130deg);
+    }
+/* ------------------- NOS ACTIONS ------------------------------------ */
+
+.anime, .insertions,.education{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+}
+.titre{
+            text-align: center;
+            width: 500px;
+            margin: 0 auto;
+}
+.para{
+            text-align: center;
+            width: 500px;
+            height: 250px
+}
+/* ---------------------------------FOOTER --------------------------- */
+footer {
+    background-color: rgb(55, 65, 151);
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.Asso{
+    margin-top: 10px;
+}
+.logo{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around; 
+}
+.suivez{
+    display: flex;
+    width: 30%;
+    justify-content: space-around
+}
+.fin{
+    background-color: black;
+    border-color: black;
+    width: 70%;
+    margin-top: 35px;
+}
+.copyr{
+    font-size: 15px;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    /* margin-bottom: 10px; */
+}
+}
